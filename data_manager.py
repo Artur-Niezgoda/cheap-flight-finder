@@ -55,7 +55,7 @@ class DataManager:
                         "iataCode": city["iataCode"],
                         }
             }
-            response = requests.put(url=f"{sheety_endpoint}/{city['id']}",
-                                    json=updated_data
-                                    )
-            print(response.text)
+            requests.put(url=f"{sheety_endpoint}/{city['id']}",
+                         json=updated_data
+                        )
+

@@ -19,7 +19,7 @@ env = Env()
 env.read_env()
 api_endpoint = "https://api.tequila.kiwi.com/"
 headers = {
-    "apikey": env("KIWI_API")
+    "apikey": env("TEQUILA_API")
 }
 
 
